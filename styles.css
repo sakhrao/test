@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #000, #4c0000);
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: black;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    outline: none;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Left Section */
+.left-section {
+    width: 45%;
+    padding: 20px;
+}
+
+.left-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.left-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Illustration */
+.illustration img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Form Section */
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.date-inputs input {
+    width: 30%;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+/* Submit Button */
+button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: red;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section,
+    .form-container {
+        width: 90%;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+}
